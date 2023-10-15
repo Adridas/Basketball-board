@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="board">
+
+            <h1 class="title">Basketball clock</h1>
+            <div id="time">
+                <div class="countdown-container">
+                    <div id="countdown">
+                      <!-- <div class="hide-section">
+                        <span class="days"></span>
+                      </div>
+                      <div class="hide-section">
+                        <span class="hours"></span>
+                      </div> -->
+                      <div class="right-margin">
+                        <span class="minutes">10</span>
+                      </div>
+                      <div>
+                        <span>:</span>
+                      </div>
+                      <div class="left-margin">
+                        <span class="seconds">00</span>
+                      </div>
+                    </div>
+                    <div class="button-container">
+                      <div class="start-button">
+                        <p>START</p>
+                      </div>
+                      <div class="stop-button">
+                        <p>STOP</p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+         
+            <div id="score" class="score-cl">
+                <div>
+                    <h2 id="Home" class="h2-name">Home</h2>
+                    <p id="score-number-home" class="number-board">00</p>
+                    <div class="add-numbers">
+                        <button class="single-number" onclick="addOne()">+1</button>
+                        <button class="single-number" onclick="addTwo()">+2</button>
+                        <button class="single-number" onclick="addThree()">+3</button>         
+                    </div>
+                </div>
+                <div>
+                    <h2 id="Away" class="h2-name">Away</h2>
+                    <p id="score-number-away" class="number-board" >00</p>
+                    <div class="add-numbers">
+                        <button class="single-number" onclick="addOneAway()">+1</button>
+                        <button class="single-number" onclick="addTwoAway()">+2</button>
+                        <button class="single-number" onclick="addThreeAway()">+3</button>         
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+            
+            <h1 class="title">Faults</h1>
+            <div class="faults">
+                <div class="add-numbers">
+
+                    <button id="first-home" class="single-number" onclick="addcolorFirst()">1</button>
+                    <button id="second-home" class="single-number" onclick="addcolorSecond()">2</button>
+                    <button id="third-home" class="single-number" onclick="addcolorThird()">3</button>
+                    <button id="four-home" class="single-number" onclick="addcolorFour()">4</button>
+                    <button id="five-home" class="single-number" onclick="addcolorFive()">5</button>        
+                </div>
+                <div class="add-numbers">
+                    <button id="first-away" class="single-number" onclick="addcolorFirstAway()">1</button>
+                    <button id="second-away" class="single-number" onclick="addcolorSecondAway()">2</button>
+                    <button id="third-away" class="single-number" onclick="addcolorThirdAway()">3</button>
+                    <button id="four-away" class="single-number" onclick="addcolorFourAway()">4</button>
+                    <button id="five-away" class="single-number" onclick="addcolorFiveAway()">5</button>         
+                </div>
+            </div>
+
+            <div class="reset">
+                <button id="reset-button" class="single-number" onclick="reset()">Reset</button>
+            </div>
+            
+        </div>
+            </body>
+    <script src="index.js"></script>
+</html>

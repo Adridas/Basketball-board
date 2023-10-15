@@ -1,0 +1,296 @@
+
+body {
+    margin: 0;
+    background-image: url(pictures/kylie-osullivan-BfaBLVCBTI8-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family:  Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+
+h1 {
+    text-align: center;
+    /* font-family: 'Cursed Timer ULiL', sans-serif; */
+                                                
+}
+
+#time {
+  margin-bottom: 60px;
+}
+
+#board {
+    width: 600px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: rgb(34, 40, 46, 0.8);
+    /* opacity: 0.9; */
+    padding: 10px;
+}
+
+#score {
+    display: flex;
+    justify-content: space-around;
+}
+
+.number-board {
+    background-color: black;
+    opacity: 100;
+    padding: 20px;
+    color: rgb(248, 245, 245);
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    font-size: 55px;
+    margin-top: 0;
+    border: solid 1px white;
+    text-align: center;
+    
+}
+
+.h2-name {
+    text-align: center;
+}
+
+.add-numbers {
+    display: flex;
+    justify-content: space-around;
+    padding: 2px;
+    gap: 5px;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    margin-bottom: 10px;
+}
+
+.single-number {
+    border: solid 1px rgba(213, 224, 236, 0.968);
+    background-color: rgba(73, 93, 113, 0.8);
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    padding: 2px;
+    margin: 0px;
+    color: rgba(213, 224, 236, 0.968);
+    font-size: 30px;
+
+ } 
+
+.number-board {
+    margin-bottom: 10px;
+}
+
+.score-number-winning {
+    color: rgba(254, 179, 28, 0.895);
+}
+
+.reset {
+    text-align: center;
+    text-justify: center;
+   
+}
+#reset-button {
+    padding: 6px 12px;
+}
+
+.faults {
+    display: flex;
+    justify-content: space-around;
+}
+
+.red {
+    color: red;
+}
+
+/* timer  */
+
+
+
+
+.countdown-container {
+    margin: auto;
+    width: 340px;
+    text-align: center;
+    opacity: 0;
+    margin-top:50px;
+
+    #countdown {
+        font-family: 'Cursed Timer ULiL' , sans-serif;
+        color: rgba(254, 179, 28, 0.895);
+        display: inline-block;
+        font-weight: 25px;
+        text-align: center;
+        font-size: 50px;
+
+        > div {
+            display: inline-block;
+            vertical-align: top;
+
+            &.left-margin {
+                margin-left: -30px;
+            }
+
+            &.right-margin {
+                margin-right: -30px;
+            }
+        }
+
+        div > span {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .hide-section {
+            display: none;
+        }
+    }
+
+    .button-container {
+        margin: 30px auto;
+        width: 120px;
+        position: relative;
+    }
+    
+    .start-button, .stop-button {
+        cursor: pointer;
+        background-color: #a3aec0;
+        border: #9aa4b4 solid 1px;
+        border-radius: 4px;
+        -moz-transition: background-color 0.4s ease;
+        -o-transition: background-color 0.4s ease;
+        -webkit-transition: background-color 0.4s ease;
+        transition: background-color 0.4s ease;
+        width: 120px;
+        height: 30px;
+        padding: 5px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .start-button p, .stop-button p {
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        color: #fff;
+    }
+    
+    .start-button:hover, .stop-button:hover {
+        -moz-transition: background-color 0.4s ease;
+        -o-transition: background-color 0.4s ease;
+        -webkit-transition: background-color 0.4s ease;
+        transition: background-color 0.4s ease;
+        background-color: #8f99a9;
+    }
+    
+    .stop-button {
+        background-color: #ff7c35;
+        border: #ef7432;
+        visibility: hidden;
+    }
+    
+    .stop-button:hover {
+        background-color: #d96c31;
+    }
+    
+}
+
+.fade-in {
+    -moz-animation: fade-in 0.3s both ease-out;
+    -o-animation: fade-in 0.3s both ease-out;
+    -webkit-animation: fade-in 0.3s both ease-out;
+    animation: fade-in 0.3s both ease-out;
+    -moz-animation-delay: 0.3s;
+    -o-animation-delay: 0.3s;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.fade-out {
+    -moz-animation: fade-out 0.3s both ease-in;;
+    -o-animation: fade-out 0.3s both ease-in;;
+    -webkit-animation: fade-out 0.3s both ease-in;;
+    animation: fade-out 0.3s both ease-in;;
+    -moz-animation-delay: 0.1s;
+    -o-animation-delay: 0.1s;
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        visibility: hidden;
+        bottom: 0px;
+    }
+
+    to {
+        opacity: 1;
+        visibility: visible;
+        bottom: 0;
+    }
+}
+
+@-moz-keyframes fade-in {
+    from {
+        opacity: 0;
+        visibility: hidden;
+        top: 0px;
+    }
+
+    to {
+        opacity: 1;
+        visibility: visible;
+        top: 0;
+    }
+}
+
+@-webkit-keyframes fade-in {
+    from {
+        opacity: 0;
+        visibility: hidden;
+        top: 0px;
+    }
+
+    to {
+        opacity: 1;
+        visibility: visible;
+        top: 0;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 1;
+        visibility: visible;
+        top: 0;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+        top: 0px;
+    }
+}
+
+@-moz-keyframes fade-out {
+    from {
+        opacity: 1;
+        visibility: visible;
+        top: 0;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+        top: 0px;
+    }
+}
+
+@-webkit-keyframes fade-out {
+    from {
+        opacity: 1;
+        visibility: visible;
+        top: 0;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+        top: 0%;
+    }
+}
+
